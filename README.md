@@ -16,10 +16,14 @@
 *http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/#mac*
 
 4. Add an environment variable for Android SDK:   
-a. **$ touch ~/.bash_profile**
-b. **$ open ~/.bash_profile**
-c. **Add: export ANDROID_HOME=<ROOT TO ANDROID SDK>**
-d. **Save, close and restart terminal**
+
+	a. **$ touch ~/.bash_profile**
+
+	b. **$ open ~/.bash_profile**
+
+	c. **Add: export ANDROID_HOME=<ROOT TO ANDROID SDK>**
+
+	d. **Save, close and restart terminal**
 
 5. Android Studio: 
 *https://developer.android.com/studio*
