@@ -41,9 +41,6 @@
 3. Download leaflet.css from *https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css* and place it in <PROJECT>/www/css/ directory
 
 4. Open index.html in www directory and replace all code with the following:
-
-
-
 ````<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
    
@@ -69,6 +66,21 @@
    
 </html>````
 
+5. Additional step for Android to fix screen density issues - change the main Activity class in the project to include the following code snippet:
+
+````@Override
+   public void onCreate(Bundle savedInstanceState)
+   {
+       super.onCreate(savedInstanceState);
+       loadUrl(launchUrl);
+       CordovaWebViewEngine engine = appView.getEngine();
+       SystemWebView webView = (SystemWebView)engine.getView();
+       WebSettings settings = webView.getSettings();
+       settings.setUseWideViewPort(true);
+       settings.setLoadWithOverviewMode(true);
+   }
+   ````
+   
 
 ###Building PhoneGap on various platforms:
 
@@ -79,7 +91,7 @@
 
 3. Import <PROJECT>/platforms/android in Android Studio and run
 
-Note: Chrome 38 WebGL support required is present only in Android 5.0+.
+Note: Requisite support for Chrome 38 WebGL is present only in Android 5.0+.
 	
 #####iOS
 1. Open terminal and add navigate to <PROJECT> directory
