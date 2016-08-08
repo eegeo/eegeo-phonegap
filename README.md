@@ -41,7 +41,9 @@
 3. Download leaflet.css from *https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css* and place it in <PROJECT>/www/css/ directory
 
 4. Open index.html in www directory and replace all code with the following:
-````<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+````
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
    
   <head>
@@ -64,7 +66,8 @@
      <script type="text/javascript">      var map = L.eeGeo.map("map", "239805706db267b03e086cc2c0c739d6");    </script>  
   </body>
    
-</html>````
+</html>
+````
 
 5. Additional step for Android to fix screen density issues - change the main Activity class in the project to include the following code snippet:
 
