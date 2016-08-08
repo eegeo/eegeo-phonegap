@@ -21,9 +21,9 @@
 
 	b. **$ open ~/.bash_profile**
 
-	c. **Add: export ANDROID_HOME=<ROOT TO ANDROID SDK>**
+	c. Add: export ANDROID_HOME="[ROOT_TO_ANDROID_SDK]"
 
-	d. **Save, close and restart terminal**
+	d. Save, close and restart terminal
 
 5. Android Studio: 
 *https://developer.android.com/studio*
@@ -44,7 +44,7 @@
 
 
 
-```<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+````<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
    
   <head>
@@ -67,8 +67,7 @@
      <script type="text/javascript">      var map = L.eeGeo.map("map", "239805706db267b03e086cc2c0c739d6");    </script>  
   </body>
    
-</html>```
-
+</html>````
 
 
 ###Building PhoneGap on various platforms:
