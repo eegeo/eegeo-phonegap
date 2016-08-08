@@ -43,29 +43,43 @@
 4. Open index.html in www directory and replace all code with the following:
 
 ````
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
-   
-  <head>
-         
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-         
-    <link rel="stylesheet" type="text/css" href="css/leaflet.css">
-         <script type="text/javascript" src="js/eegeo.js"></script>     <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>      
-    <meta name="format-detection" content="telephone=no" />
-         
-    <meta name="msapplication-tap-highlight" content="no" />
-         
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-       
-  </head>
-    
-  <body >
-      
-    <div id="map" style="width: 100vw; height: 100vh; padding:0; margin-left: -8px; margin-top: -8px;"></div>
-     <script type="text/javascript">      var map = L.eeGeo.map("map", "EEGEO_DEV_KEY");    </script>  
-  </body>
-   
+   <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Untitled Document</title>
+       
+       <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+           <script type="text/javascript" src="js/eegeo.js"></script>
+           <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+           
+           <meta name="format-detection" content="telephone=no" />
+           <meta name="msapplication-tap-highlight" content="no" />
+           <meta id="myViewport", name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=0, width=device-width, height=device-height" />
+           
+           <script>
+               var viewPortScale = 1 / window.devicePixelRatio;
+               var mvp = document.getElementById('myViewport');
+               mvp.setAttribute('content','user-scalable=no, initial-scale='+viewPortScale+', maximum-scale=1, minimum-scale=0, width=device-width, height=device-height');
+               </script>
+           
+           <style>
+               * {-webkit-backface-visibility: hidden;}
+               </style>
+           </head>
+   
+   <body scroll="no" style="overflow: hidden" >
+       <div id="map" style="width: 100vw; height: 100vh; padding:0; margin-left: -8px; margin-top: -8px;"></div>
+       <script type="text/javascript">
+           
+           var map = L.eeGeo.map("map", "EEGEO_DEV_KEY", {
+                                 center: [37.7858, -122.401],
+                                 zoom: 12,
+                                 indoorsEnabled: true
+                                 });
+                                 
+           </script>
+   </body>
 </html>
 ````
 • Additional step for Android to fix screen density issues - change the main Activity class in the project to include the following code snippet:
