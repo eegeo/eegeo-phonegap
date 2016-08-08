@@ -68,8 +68,7 @@
    
 </html>
 ````
-
-5. Additional step for Android to fix screen density issues - change the main Activity class in the project to include the following code snippet:
+• Additional step for Android to fix screen density issues - change the main Activity class in the project to include the following code snippet:
 
 ````@Override
    public void onCreate(Bundle savedInstanceState)
