@@ -63,7 +63,7 @@
   <body >
       
     <div id="map" style="width: 100vw; height: 100vh; padding:0; margin-left: -8px; margin-top: -8px;"></div>
-     <script type="text/javascript">      var map = L.eeGeo.map("map", "239805706db267b03e086cc2c0c739d6");    </script>  
+     <script type="text/javascript">      var map = L.eeGeo.map("map", "EEGEO_DEV_KEY");    </script>  
   </body>
    
 </html>
