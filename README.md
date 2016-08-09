@@ -1,5 +1,22 @@
-#Getting eeGeo.js on PhoneGap
+<a href="https://www.eegeo.com/">
+    <img src="https://cdn2.eegeo.com/wp-content/uploads/2016/03/eegeo_logo_quite_big.png" alt="eeGeo Logo" title="eegeo" align="right" height="80px" />
+</a>
 
+# eeGeo Phonegap 
+
+![eeGeo](https://cdn2.eegeo.com/wp-content/uploads/2016/03/readme-banner.jpg)
+
+The eeGeo Phonegap project allows you to easily create eeGeo [beautiful 3D maps](https://www.eegeo.com/) phonegap multi-platform projects.
+
+## Examples
+
+You can find [feature-by-feature examples](https://www.eegeo.com/eegeo.js/examples/) on our website.
+
+## API
+
+A [full API reference](https://www.eegeo.com/eegeo.js/docs/) is also available on our website.
+
+## Getting Started
 
 ### Pre-installations required:
 
@@ -31,58 +48,29 @@
 6. Xcode: 
 *https://developer.apple.com/xcode*
 
-### Creating a new PhoneGap project and linking it with eeGeo.js:
+### eegeo.js and leaflet.css:
 
-1. **$ phonegap create eegeo-phonegap --id "com.eegeo.phonegap" --name "eegeo-phonegap"**
+1. Download eegeo.js from *https://cdn-webgl.eegeo.com/eegeojs/early_access/latest/eegeo.js* and replace eegeo.js with the downloaded one in <PROJECT>/www/js/ directory.
 
+2. Download leaflet.css from *https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css* replace leaflet.css3 with the downloaded one in <PROJECT>/www/css/ directory
 
-2. Download eeGeo.js from *https://cdn-webgl.eegeo.com/eegeojs/early_access/latest/eegeo.js* and place it in <PROJECT>/www/js/ directory.
+### API Key 
 
-3. Download leaflet.css from *https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css* and place it in <PROJECT>/www/css/ directory
+In order to use the eeGeo 3D Maps API, you must sign up for a free developer account at https://www.eegeo.com/developers. After signing up, you'll be able to create an [API key](https://www.eegeo.com/developers/apikeys) for your apps. 
 
-4. Open index.html in www directory and replace all code with the following:
+After signing up for a developer account and creating an API key, add it to the phonegap app [index.html file](https://github.com/eegeo/eegeo-phonegap/blob/master/www/index.html) replace <EEGEO_APP_KEY_HERE> with your your key
 
-````
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
-   <head>
-       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-       <title>Untitled Document</title>
-       
-       <link rel="stylesheet" type="text/css" href="css/leaflet.css">
-           <script type="text/javascript" src="js/eegeo.js"></script>
-           <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
-           
-           <meta name="format-detection" content="telephone=no" />
-           <meta name="msapplication-tap-highlight" content="no" />
-           <meta id="myViewport", name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=0, width=device-width, height=device-height" />
-           
-           <script>
-               var viewPortScale = 1 / window.devicePixelRatio;
-               var mvp = document.getElementById('myViewport');
-               mvp.setAttribute('content','user-scalable=no, initial-scale='+viewPortScale+', maximum-scale=1, minimum-scale=0, width=device-width, height=device-height');
-               </script>
-           
-           <style>
-               * {-webkit-backface-visibility: hidden;}
-               </style>
-           </head>
-   
-   <body scroll="no" style="overflow: hidden" >
-       <div id="map" style="width: 100vw; height: 100vh; padding:0; margin-left: -8px; margin-top: -8px;"></div>
-       <script type="text/javascript">
-           
-           var map = L.eeGeo.map("map", "EEGEO_DEV_KEY", {
-                                 center: [37.7858, -122.401],
-                                 zoom: 12,
-                                 indoorsEnabled: true
-                                 });
-                                 
-           </script>
-   </body>
-</html>
-````
-• Additional step for Android to fix screen density issues - change the main Activity class in the project to include the following code snippet:
+###Building PhoneGap on various platforms:
+
+#####Android Build
+
+1. Open terminal and add navigate to <PROJECT> directory
+
+2.  **$ phonegap build android**
+
+3. Import <PROJECT>/platforms/android in Android Studio and run
+
+4. Additional step for Android to fix screen density issues - change the main Activity class in the project to include the following code snippet:
 
 ````@Override
    public void onCreate(Bundle savedInstanceState)
@@ -96,23 +84,12 @@
        settings.setLoadWithOverviewMode(true);
    }
    ````
-   
-
-###Building PhoneGap on various platforms:
-
-#####Android
-1. Open terminal and add navigate to <PROJECT> directory
-
-2.  **$ phonegap build android**
-
-3. Import <PROJECT>/platforms/android in Android Studio and run
-
 Note: Requisite support for Chrome 38 WebGL is present only in Android 5.0+.
-	
+
 #####iOS
 1. Open terminal and add navigate to <PROJECT> directory
 
-2. **$ phonegap build iOS**
+2. **$ phonegap build ios**
 
 3. Open <PROJECT>/platforms/ios/eegeo-phonegap.xcodeproj in Xcode and run 
 
