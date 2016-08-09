@@ -38,7 +38,7 @@ A [full API reference](https://www.eegeo.com/eegeo.js/docs/) is also available o
 
 	b. **$ open ~/.bash_profile**
 
-	c. Add: export ANDROID_HOME="[ROOT_TO_ANDROID_SDK]"
+	c. Add: **export ANDROID_HOME="[ROOT_TO_ANDROID_SDK]"**
 
 	d. Save, close and restart terminal.
 
@@ -54,7 +54,7 @@ A [full API reference](https://www.eegeo.com/eegeo.js/docs/) is also available o
 
 2. Download leaflet.css from *https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css* replace leaflet.css3 with the downloaded one in ````<PROJECT>/www/css/```` directory.
 
-### eeGeo API Key 
+### eeGeo API Key:
 
 In order to use the eeGeo 3D Maps API, you must sign up for a free developer account at https://www.eegeo.com/developers. After signing up, you'll be able to create an [API key](https://www.eegeo.com/developers/apikeys) for your apps. 
 
@@ -64,7 +64,7 @@ After signing up for a developer account and creating an API key, add it to the 
 
 #####Android Build
 
-1. Open terminal and add navigate to ````<PROJECT>```` directory.
+1. Open terminal and navigate to ````<PROJECT>```` directory.
 
 2.  **$ phonegap build android**
 
@@ -87,7 +87,7 @@ After signing up for a developer account and creating an API key, add it to the 
 Note: Requisite support for Chrome 38 WebGL is present only in Android 5.0+.
 
 #####iOS
-1. Open terminal and add navigate to ````<PROJECT>```` directory
+1. Open terminal and navigate to ````<PROJECT>```` directory
 
 2. **$ phonegap build ios**
 
