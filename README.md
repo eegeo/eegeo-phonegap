@@ -2,19 +2,19 @@
     <img src="https://cdn2.eegeo.com/wp-content/uploads/2016/03/eegeo_logo_quite_big.png" alt="eeGeo Logo" title="eegeo" align="right" height="80px" />
 </a>
 
-# eeGeo PhoneGap 
+# WRLD PhoneGap 
 
-![eeGeo](https://cdn2.eegeo.com/wp-content/uploads/2016/03/readme-banner.jpg)
+![WRLD](https://cdn2.eegeo.com/wp-content/uploads/2016/03/readme-banner.jpg)
 
-The eeGeo PhoneGap project allows you to easily create eeGeo [beautiful 3D maps](https://www.eegeo.com/) using PhoneGap on multiple platforms.
+The WRLD PhoneGap project allows you to easily create WRLD [beautiful 3D maps](https://www.wrld3d.com/) using PhoneGap on multiple platforms.
 
 ## Examples
 
-You can find [feature-by-feature examples](https://www.eegeo.com/eegeo.js/examples/) on our website.
+You can find [feature-by-feature examples](https://docs.wrld3d.com/wrld.js/latest/docs/examples/) on our website.
 
 ## API
 
-A [full API reference](https://www.eegeo.com/eegeo.js/docs/) is also available on our website.
+A [full API reference](https://docs.wrdl3d.com/wrld.js/latest/docs/api/) is also available on our website.
 
 ## Getting Started
 
@@ -48,17 +48,17 @@ A [full API reference](https://www.eegeo.com/eegeo.js/docs/) is also available o
 6. Xcode: 
 *https://developer.apple.com/xcode*
 
-### eegeo.js and leaflet.css:
+### wrld.js and leaflet.css:
 
-1. Download eegeo.js from *https://cdn-webgl.eegeo.com/eegeojs/early_access/latest/eegeo.js* and replace eegeo.js with the downloaded one in ````<PROJECT>/www/js/```` directory.
+1. Download wrld.js from *https://cdn-webgl.wrld3d.com/wrldjs/early_access/latest/wrld.js* and replace wrld.js with the downloaded one in ````<PROJECT>/www/js/```` directory.
 
 2. Download leaflet.css from *https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css* replace leaflet.css3 with the downloaded one in ````<PROJECT>/www/css/```` directory.
 
-### eeGeo API Key:
+### WRLD API Key:
 
-In order to use the eeGeo 3D Maps API, you must sign up for a free developer account at https://www.eegeo.com/developers. After signing up, you'll be able to create an [API key](https://www.eegeo.com/developers/apikeys) for your apps. 
+In order to use the WRLD 3D Maps API, you must sign up for a free developer account at https://www.wrld3d.com/developers. After signing up, you'll be able to create an [API key](https://www.wrld3d.com/developers/apikeys) for your apps. 
 
-After signing up for a developer account and creating an API key, add it to the PhoneGap app [index.html file](https://github.com/eegeo/eegeo-phonegap/blob/master/www/index.html) by replacing ````<EEGEO_APP_KEY_HERE>```` with your key.
+After signing up for a developer account and creating an API key, add it to the PhoneGap app [index.html file](https://github.com/wrld3d/wrld-phonegap/blob/master/www/index.html) by replacing ````<EEGEO_APP_KEY_HERE>```` with your key.
 
 ###Building PhoneGap on various platforms:
 
