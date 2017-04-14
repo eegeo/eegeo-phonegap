@@ -1,10 +1,10 @@
 <a href="https://www.eegeo.com/">
-    <img src="https://cdn2.eegeo.com/wp-content/uploads/2016/03/eegeo_logo_quite_big.png" alt="eeGeo Logo" title="eegeo" align="right" height="80px" />
+    <img src="https://cdn2.eegeo.com/wp-content/uploads/2017/04/WRLD_Blue.png" align="right" height="80px" />
 </a>
 
 # WRLD PhoneGap 
 
-![WRLD](https://cdn2.eegeo.com/wp-content/uploads/2016/03/readme-banner.jpg)
+![WRLD](https://cdn2.eegeo.com/wp-content/uploads/2017/04/screenselection01.png)
 
 The WRLD PhoneGap project allows you to easily create WRLD [beautiful 3D maps](https://www.wrld3d.com/) using PhoneGap on multiple platforms.
 
